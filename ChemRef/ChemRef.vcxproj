@@ -157,9 +157,10 @@
     <ClInclude Include="json.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <CopyFileToFolders Include="periodic_table.json">
-      <FileType>Document</FileType>
-    </CopyFileToFolders>
+    <None Include="PeriodicTableJSON.json">
+      <FileType>Text</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

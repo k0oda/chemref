@@ -25,7 +25,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="periodic_table.json">
+    <None Include="PeriodicTableJSON.json">
       <Filter>Файлы ресурсов</Filter>
     </None>
   </ItemGroup>

@@ -39,20 +39,17 @@ string get_input()
 json get_element_by_symbol(string symbol)
 {
     ifstream database;
-    database.open("periodic_table.json", ios::in);
+    database.open("PeriodicTableJSON.json", ios::in);
 
     if (database.is_open())
     {
-        string line;
-        json element;
-
-        while (getline(database, line))
+        json elements = json::parse(database)["elements"];
+        for (int i = 0; i < elements.size(); i++)
         {
-            element = json::parse(line);
-            if (element["symbol"] == symbol)
+            if (elements.at(i)["symbol"] == symbol)
             {
                 database.close();
-                return element;
+                return elements.at(i);
             }
         }
         database.close();
