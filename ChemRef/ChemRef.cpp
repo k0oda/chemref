@@ -5,7 +5,7 @@
 using namespace std;
 using namespace nlohmann;
 
-json get_element_by_symbol(string symbol);
+json get_element_by_symbol(string);
 string get_input();
 
 int main()
