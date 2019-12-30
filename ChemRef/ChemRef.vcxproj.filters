@@ -25,8 +25,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="PeriodicTableJSON.json">
+    <CopyFileToFolders Include="PeriodicTableJSON.json">
       <Filter>Файлы ресурсов</Filter>
-    </None>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
